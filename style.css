@@ -1,0 +1,43 @@
+:root {
+    /* Theme Colors */
+    --purple: #7A74B0;
+    --mobile-purple: #B6C4EE;
+    --mobile-purple-blur: #7A74B04D;
+    --bronze: #937344;
+    --mobile-bronze: #CFAF7F;
+    --mobile-bronze-blur: #8373444D;
+    --brown: #794633;
+    --mobile-brown: #ECC178;
+    --mobile-brown-blur: #7946334D;
+    --green: #697973;
+    --mobile-green: #689B85;
+    --mobile-green-blur: #6979734D;
+
+    /* General Colors */
+    --invalid: #D00300;
+    --form-bkg-color: #FFF;
+    --default-border-color: #E5E7EB;
+    --bkg-color: #F9FAFB;
+
+    /* Shadows */
+    --active-input-shad: 5px 5px 12px 0px #0000004D;
+    --button-shad: 0px 4px 10px 2px #00000040;
+    --form-shad: 0px 6px 15px 3px #00000040;
+
+    /* Margins and Paddings*/
+    --gif-items-padding: 40em 0 6em; /* 400px top, 60px bottom */
+    --button-margin: 6em; /* 60px top and bottom */
+    --form-offset: 12em; /* 120px left */
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
