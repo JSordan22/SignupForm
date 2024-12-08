@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     /* Theme Colors */
     --purple: #7A74B0;
@@ -16,18 +18,16 @@
     /* General Colors */
     --invalid: #D00300;
     --form-bkg-color: #FFF;
-    --default-border-color: #E5E7EB;
+    --default-border-color: #e5e8ec;
     --bkg-color: #F9FAFB;
 
     /* Shadows */
-    --active-input-shad: 5px 5px 12px 0px #0000004D;
-    --button-shad: 0px 4px 10px 2px #00000040;
-    --form-shad: 0px 6px 15px 3px #00000040;
+    --active-input-shad: 2px 2px 5px 0px #00000020;
+    --button-shad: 0px 2px 4px 1px #00000040;
+    --form-shad: 0px 3px 6px 1px #00000040;
 
     /* Margins and Paddings*/
-    --gif-items-padding: 40em 0 6em; /* 400px top, 60px bottom */
-    --button-margin: 6em; /* 60px top and bottom */
-    --form-offset: 12em; /* 120px left */
+    --gif-items-padding: 15em 0 3em; 
 
 }
 
@@ -35,9 +35,164 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
-html {
-    font-size: 62.5%;
+body {
+    background-color: var(--bkg-color);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100dvh;
+
 }
 
+.background {
+    color: white;
+    background-image: url(/Images/purple.gif);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15em 0 2em;
+    height: 100%;
+    aspect-ratio: 900 / 1560;
+
+}
+
+.background h1 {
+    background-color: #00000080;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    padding: 2em 0;
+    width: 100%;
+
+}
+
+.background p {
+    font-size: 1.5rem;
+
+}
+
+.background p a,
+.background p a:visited,
+.background p a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #FFF;
+
+}
+
+main {
+    width: 100%;
+
+}
+
+main .container {
+    width: 70rem;
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+main .blurb {
+    margin-bottom: 3em;
+
+}
+
+main p {
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+
+main .signup-form {
+    background-color: var(--form-bkg-color);
+    box-shadow: var(--form-shad);
+    padding: 3em 0;
+
+}
+
+.signup-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em 0;
+
+}
+
+.signup-form p {
+    grid-column: 1 / 3;
+
+}
+
+.signup-form .textbox {
+    width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.4em;
+    
+}
+
+.signup-form .textbox label {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+
+}
+
+.signup-form .textbox input {
+    border: 1px solid var(--default-border-color);
+    border-radius: 0.6rem;
+    width: 27.5rem;
+    aspect-ratio: 7.5 / 1;
+    padding-left: 1rem;
+    font-size: 1rem;
+
+}
+
+.signup-form .textbox input:focus {
+    border: 1px solid var(--purple);
+    box-shadow: var(--active-input-shad);
+
+}
+
+.signup-form .textbox input:focus+label {
+    color: var(--purple);
+
+}
+
+.signup-form .textbox input:invalid {
+    border: 1px solid var(--invalid);
+
+}
+
+main .account-options .sumbit-btn {
+    cursor: pointer;
+    background-color: #7A74B0;
+    color: #FFF;
+    border: 1px solid #7A74B0;
+    font-size: 0.9rem;
+    border-radius: 0.6rem;
+    padding: 1.2em 4.2em;
+    margin: 2.5em 0;
+    box-shadow: var(--button-shad);
+
+}
+
+.account-options h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+
+.account-options h3 a,
+.account-options h3 a:visited,
+.account-options h3 a:hover {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 800;
+
+}

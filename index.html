@@ -9,6 +9,55 @@
     <title>Signup Form</title>
 </head>
 <body>
-    
+    <div class="background">
+        <h1>Join the City!</h1>
+        <p>Art by <a href="https://waneella.com/">Waneella</a></p>
+    </div>
+    <main>
+        <div class="container">
+            <p class="blurb">This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams. <br> Sign up <i>now</i> to get started
+                <br> <br> You <i>know</i> you want to.
+            </p>
+        </div>
+
+        <section class="signup-form">
+            <div class="container">
+                <form id="signup" action="" method="POST">
+                    <p>Let's do this!</p>
+                    <div class="textbox">
+                        <input type="text" name="first_name" id="fName" pattern="[A-Za-z]{1,32}">
+                        <label for="fName">first name</label>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" name="last_name" id="lName" pattern="[A-Za-z]{1,32}">
+                        <label for="lName">last name</label>
+                    </div>
+                    <div class="textbox">
+                        <input type="email" name="email" id="email">
+                        <label for="email">email</label>
+                    </div>
+                    <div class="textbox">
+                        <input type="tel" name="phone_number" id="phoneNum" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+                        <label for="phoneNum">phone number</label>
+                    </div>
+                    <div class="textbox">
+                        <input type="pass" name="password" id="pass" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])\S{6,}">
+                        <label for="pass">password</label>
+                    </div>
+                    <div class="textbox">
+                        <input type="pass" name="confirm_password" id="confPass">
+                        <label for="confPass">confirm password</label>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="account-options">
+                <button class="sumbit-btn" type="sumbit" form="signup"><h2>Create Account</h2></button>
+                <h3>Already have an account? <a href="#">Log In</a></p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
