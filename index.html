@@ -11,7 +11,7 @@
 <body>
     <div class="background">
         <h1>Join the City!</h1>
-        <p>Art by <a href="https://waneella.com/">Waneella</a></p>
+        <p>Art by <a href="https://waneella.com/" target="_blank">Waneella</a></p>
     </div>
     <main>
         <div class="container">
@@ -25,11 +25,11 @@
                 <form id="signup" action="" method="POST">
                     <p>Let's do this!</p>
                     <div class="textbox">
-                        <input type="text" name="first_name" id="fName" pattern="[A-Za-z]{1,32}">
+                        <input type="text" name="first_name" id="fName">
                         <label for="fName">first name</label>
                     </div>
                     <div class="textbox">
-                        <input type="text" name="last_name" id="lName" pattern="[A-Za-z]{1,32}">
+                        <input type="text" name="last_name" id="lName">
                         <label for="lName">last name</label>
                     </div>
                     <div class="textbox">
@@ -37,18 +37,19 @@
                         <label for="email">email</label>
                     </div>
                     <div class="textbox">
-                        <input type="tel" name="phone_number" id="phoneNum" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+                        <input type="tel" name="phone_number" id="phoneNum">
                         <label for="phoneNum">phone number</label>
                     </div>
                     <div class="textbox">
-                        <input type="pass" name="password" id="pass" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])\S{6,}">
+                        <input type="password" name="password" id="pass">
                         <label for="pass">password</label>
                     </div>
                     <div class="textbox">
-                        <input type="pass" name="confirm_password" id="confPass">
+                        <input type="password" name="confirm_password" id="confPass">
                         <label for="confPass">confirm password</label>
                     </div>
                 </form>
+                <p id="errMsg">*Passwords do not match</p>
             </div>
         </section>
 
