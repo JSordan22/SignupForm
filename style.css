@@ -29,6 +29,8 @@
     /* Margins and Paddings*/
     --gif-items-padding: 15em 0 3em; 
 
+    --mouse-y: var(--purple);
+    
 }
 
 * {
@@ -49,15 +51,17 @@ body {
 
 .background {
     color: #FFF;
-    background-image: url(Images/purple.gif);
-    background-size: contain;
+    background-image: url(Images/brown.gif);
+    background-size: cover;
+    background-position: right;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 15em 0 2em;
     height: 100%;
-    aspect-ratio: 900 / 1560;
+    width: 40%
+    /* aspect-ratio: 900 / 1560; */
 
 }
 
@@ -94,6 +98,8 @@ main .container {
     width: 70rem;
     text-align: left;
     margin: 0 auto;
+    --_theme: var(--theme, red);
+    --theme: var(--mouse-y);
 
 }
 
@@ -154,13 +160,13 @@ main .signup-form {
 }
 
 .signup-form .textbox input:focus {
-    border: 1px solid var(--purple);
+    border: 1px solid var(--_theme);
     box-shadow: var(--active-input-shad);
 
 }
 
 .signup-form .textbox input:focus+label {
-    color: var(--purple);
+    color: var(--_theme);
 
 }
 
@@ -171,9 +177,9 @@ main .signup-form {
 
 main .account-options .sumbit-btn {
     cursor: pointer;
-    background-color: #7A74B0;
+    background-color: var(--_theme);
     color: #FFF;
-    border: 1px solid #7A74B0;
+    border: 1px solid var(--_theme);
     font-size: 0.9rem;
     border-radius: 0.6rem;
     padding: 1.2em 4.2em;
@@ -191,7 +197,7 @@ main .account-options .sumbit-btn {
 .account-options h3 a,
 .account-options h3 a:visited,
 .account-options h3 a:hover {
-    color: var(--purple);
+    color: var(--_theme);
     text-decoration: none;
     font-weight: 800;
 
