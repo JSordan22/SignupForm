@@ -29,7 +29,7 @@
     /* Margins and Paddings*/
     --gif-items-padding: 15em 0 3em; 
 
-    --mouse-y: var(--purple);
+    --curr-color: var(--purple);
     
 }
 
@@ -51,7 +51,7 @@ body {
 
 .background {
     color: #FFF;
-    background-image: url(Images/brown.gif);
+    /* background-image: url(Images/brown.gif); */
     background-size: cover;
     background-position: right;
     display: flex;
@@ -60,10 +60,26 @@ body {
     align-items: center;
     padding: 15em 0 2em;
     height: 100%;
-    width: 40%
+    width: 42%
     /* aspect-ratio: 900 / 1560; */
 
 }
+
+/* 
+.background {
+    color: #FFF;
+    background-image: url(Images/purple.gif);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15em 0 2em;
+    height: 100%;
+    aspect-ratio: 900 / 1560;
+    
+} 
+    */
 
 .background h1 {
     background-color: #00000080;
@@ -99,7 +115,7 @@ main .container {
     text-align: left;
     margin: 0 auto;
     --_theme: var(--theme, red);
-    --theme: var(--mouse-y);
+    --theme: var(--curr-color);
 
 }
 
@@ -138,6 +154,7 @@ main .signup-form {
     display: flex;
     flex-direction: column-reverse;
     gap: 0.4em;
+    outline: 0;
     
 }
 
@@ -150,17 +167,18 @@ main .signup-form {
 }
 
 .signup-form .textbox input {
-    border: 1px solid var(--default-border-color);
+    border: 2px solid var(--default-border-color);
     border-radius: 0.6rem;
     width: 27.5rem;
     aspect-ratio: 7.5 / 1;
     padding-left: 1rem;
     font-size: 1rem;
+    outline: 0;
 
 }
 
 .signup-form .textbox input:focus {
-    border: 1px solid var(--_theme);
+    border: 2px solid var(--_theme);
     box-shadow: var(--active-input-shad);
 
 }
@@ -209,3 +227,4 @@ main .account-options .sumbit-btn {
     font-size: 0.75rem;
     font-weight: 400;
 }
+

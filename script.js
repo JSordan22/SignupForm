@@ -30,7 +30,7 @@ function selectTheme() {
     let rndmKey = objs[keys[rndm]]
 
     background.style.backgroundImage = `url(${rndmKey.url})`;
-    root.style.setProperty('--mouse-y', rndmKey.color);;
+    root.style.setProperty('--curr-color', rndmKey.color);;
 
 }
 
